@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rigid Fiber | Premium Plant-Based Straws for Cafés, Events & Hospitality</title>
+<meta name="description" content="Elevate every sip with Rigid Fiber's premium plant-based straws. PFAS-free, BPA-free, durable in hot and cold drinks — designed for cafés, events, hospitality, and everyday moments where presentation matters.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FAF6EF;
+    --paper:#F4EEE2;
+    --band:#F2E4DA;
+    --beige:#E3D2AF;
+    --blush:#DDACA4;
+    --blush-soft:#F1DDD7;
+    --espresso:#2E2117;
+    --espresso-soft:#5B4A3A;
+    --gold:#B08A4E;
+    --gold-soft:#CBAD79;
+    --card:#F6F0E4;
+    --line: rgba(176,138,78,0.28);
+    --shadow: 0 20px 60px -30px rgba(46,33,23,0.35);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{
+    background:var(--ivory);
+    color:var(--espresso);
+    font-family:var(--sans);
+    font-weight:300;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  ul{ list-style:none; }
+  button{ font-family:var(--sans); }
+
+  .wrap{ max-width:1220px; margin:0 auto; padding:0 40px; }
+
+  h1,h2,h3,h4{
+    font-family:var(--serif);
+    font-weight:500;
+    color:var(--espresso);
+    letter-spacing:0.01em;
+  }
+
+  .eyebrow{
+    font-family:var(--sans);
+    font-size:11.5px;
+    letter-spacing:0.26em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:500;
+  }
+
+  .lede{ font-family:var(--serif); font-style:italic; color:var(--espresso-soft); font-size:19px; }
+
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:15px 32px;
+    font-family:var(--sans); font-size:12.5px; letter-spacing:0.14em; text-transform:uppercase;
+    border-radius:2px; cursor:pointer;
+    transition:transform .35s ease, box-shadow .35s ease, background .35s ease, color .35s ease;
+    border:1px solid transparent;
+  }
+  .btn-primary{ background:var(--espresso); color:var(--ivory); }
+  .btn-primary:hover{ transform:translateY(-2px); box-shadow:var(--shadow); }
+  .btn-outline{ background:transparent; color:var(--espresso); border-color:var(--espresso); }
+  .btn-outline:hover{ background:var(--espresso); color:var(--ivory); transform:translateY(-2px); }
+
+  .sprig{ width:22px; height:22px; margin:0 auto 14px; color:var(--gold); opacity:.9; }
+  .sprig svg{ width:100%; height:100%; }
+  .rule{ width:56px; height:1px; background:var(--gold-soft); margin:18px auto; opacity:.7; }
+
+  .fade-up{ opacity:0; transform:translateY(24px); transition:opacity .8s ease, transform .8s ease; }
+  .fade-up.in{ opacity:1; transform:translateY(0); }
+
+  /* ---------- TOP BAR ---------- */
+  .topbar{
+    background:var(--band);
+    text-align:center;
+    padding:9px 20px;
+    font-size:11px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--espresso-soft);
+  }
+  .topbar span{ color:var(--gold); margin:0 10px; }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(250,246,239,0.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 40px;
+    max-width:1220px; margin:0 auto;
+    gap:20px;
+  }
+  .brand-lockup{ display:flex; align-items:center; gap:12px; }
+  .brand-leaf{ width:30px; height:30px; color:var(--gold); flex-shrink:0; }
+  .brand-text .brand{ font-family:var(--serif); font-size:21px; letter-spacing:0.05em; font-weight:600; line-height:1.1; }
+  .brand-text .brand-sub{ font-size:9.5px; letter-spacing:0.24em; text-transform:uppercase; color:var(--espresso-soft); }
+
+  .nav-links{ display:flex; gap:30px; align-items:center; }
+  .nav-links a{
+    font-size:13px; letter-spacing:0.04em; color:var(--espresso-soft);
+    position:relative; padding-bottom:4px; display:inline-flex; align-items:center; gap:4px;
+    transition:color .3s ease;
+  }
+  .nav-links a::after{
+    content:''; position:absolute; left:0; bottom:0; width:0%; height:1px; background:var(--gold);
+    transition:width .3s ease;
+  }
+  .nav-links a:hover{ color:var(--espresso); }
+  .nav-links a:hover::after{ width:100%; }
+  .caret{ font-size:9px; opacity:.6; }
+
+  .nav-icons{ display:flex; align-items:center; gap:20px; }
+  .nav-icons svg{ width:19px; height:19px; color:var(--espresso-soft); cursor:pointer; transition:color .3s ease; }
+  .nav-icons svg:hover{ color:var(--espresso); }
+  .cart-wrap{ position:relative; }
+  .cart-count{
+    position:absolute; top:-8px; right:-9px;
+    background:var(--espresso); color:var(--ivory);
+    font-size:9px; width:16px; height:16px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{ padding:70px 0 0; }
+  .hero-grid{ display:grid; grid-template-columns:0.92fr 1.08fr; gap:70px; align-items:center; }
+  .hero-copy .sprig{ margin:0 0 16px; }
+  .hero-copy h1{
+    font-size:clamp(42px, 5.4vw, 66px);
+    line-height:1.03;
+    letter-spacing:0.01em;
+  }
+  .hero-copy .rule{ margin:22px 0; }
+  .hero-copy p.sub{ font-size:16.5px; color:var(--espresso-soft); max-width:420px; margin-bottom:32px; }
+  .hero-ctas{ display:flex; gap:16px; flex-wrap:wrap; margin-bottom:44px; }
+  .badge-row{ display:flex; gap:26px; flex-wrap:wrap; }
+  .badge{ display:flex; flex-direction:column; align-items:center; gap:8px; width:78px; text-align:center; }
+  .badge svg{ width:26px; height:26px; color:var(--espresso-soft); }
+  .badge span{ font-size:9.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--espresso-soft); line-height:1.3; }
+
+  .hero-visual{ position:relative; }
+  .hero-photo-frame{
+    position:relative; border-radius:4px; overflow:hidden;
+    box-shadow:var(--shadow);
+    min-height:460px;
+  }
+  .hero-photo-frame img{ width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
+
+  /* ---------- SECTION SHELL ---------- */
+  section{ padding:100px 0; position:relative; }
+  .section-head{ text-align:center; max-width:640px; margin:0 auto 56px; }
+  .section-head h2{ font-size:clamp(28px,3.6vw,40px); margin-top:12px; }
+
+  /* ---------- SPLIT (Better Straw for Beautiful Drinks) ---------- */
+  .split{ padding:0; }
+  .split-grid{ display:grid; grid-template-columns:1fr 1.15fr 1fr; align-items:stretch; min-height:480px; }
+  .split-photo{ background-size:cover; background-position:center; min-height:340px; }
+  .split-copy{
+    background:var(--paper);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:70px 50px;
+  }
+  .split-copy h2{ font-size:clamp(26px,3.2vw,36px); margin:14px 0 18px; }
+  .split-copy p{ color:var(--espresso-soft); font-size:15.5px; max-width:400px; margin-bottom:30px; }
+
+  /* ---------- OCCASION GRID ---------- */
+  .occasion-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+  .occ-card{ background:var(--paper); border-radius:4px; overflow:hidden; box-shadow:var(--shadow); transition:transform .35s ease; }
+  .occ-card:hover{ transform:translateY(-6px); }
+  .occ-photo{ height:190px; background-size:cover; background-position:center; }
+  .occ-body{ padding:26px 22px 30px; }
+  .occ-body h4{ font-size:16px; letter-spacing:.02em; margin-bottom:10px; font-family:var(--sans); font-weight:500; text-transform:uppercase; }
+  .occ-body p{ font-size:13.5px; color:var(--espresso-soft); margin-bottom:18px; min-height:52px; }
+  .occ-body a{ font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid var(--gold); padding-bottom:2px; }
+
+  /* ---------- WHY CHOOSE (6-col) ---------- */
+  .why-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:20px; }
+  .why-item{ text-align:center; }
+  .why-item svg{ width:30px; height:30px; color:var(--espresso-soft); margin:0 auto 16px; }
+  .why-item h4{ font-family:var(--sans); font-weight:500; font-size:13px; letter-spacing:.03em; text-transform:uppercase; margin-bottom:8px; }
+  .why-item p{ font-size:12.5px; color:var(--espresso-soft); line-height:1.5; }
+
+  /* ---------- CTA BANNER ---------- */
+  .cta-banner{ background:var(--blush-soft); padding:0; }
+  .cta-grid{ display:grid; grid-template-columns:1fr 0.9fr; align-items:center; min-height:420px; }
+  .cta-copy{ padding:70px 60px; }
+  .cta-copy .eyebrow{ margin-bottom:16px; }
+  .cta-copy h2{ font-size:clamp(30px,3.8vw,44px); margin-bottom:18px; }
+  .cta-copy p{ color:var(--espresso-soft); font-size:16px; margin-bottom:32px; max-width:420px; }
+  .cta-photo{ height:100%; min-height:420px; background-size:cover; background-position:center; }
+
+  /* ---------- WHOLESALE ---------- */
+  .wholesale{ background:var(--paper); }
+  .wholesale-grid{ display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; }
+  .wholesale-copy .eyebrow{ margin-bottom:14px; }
+  .wholesale-copy h2{ font-size:clamp(28px,3.6vw,40px); margin-bottom:18px; }
+  .wholesale-copy p{ color:var(--espresso-soft); font-size:15.5px; max-width:440px; margin-bottom:30px; }
+  .wholesale-ctas{ display:flex; gap:16px; flex-wrap:wrap; }
+  .partner-grid{ display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+  .partner-item svg{ width:28px; height:28px; color:var(--gold); margin-bottom:14px; }
+  .partner-item h4{ font-family:var(--sans); font-weight:500; font-size:13.5px; letter-spacing:.03em; text-transform:uppercase; margin-bottom:8px; }
+  .partner-item p{ font-size:13px; color:var(--espresso-soft); }
+
+  /* ---------- NEWSLETTER / FOOTER ---------- */
+  footer{ background:var(--espresso); color:#D8CBBB; padding-top:80px; }
+  .foot-top{ display:grid; grid-template-columns:1.1fr auto; gap:50px; align-items:center; padding-bottom:60px; border-bottom:1px solid rgba(203,173,121,.25); }
+  .foot-newsletter h4{ font-family:var(--sans); font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-soft); margin-bottom:12px; font-weight:500; }
+  .foot-newsletter h3{ color:var(--ivory); font-size:26px; margin-bottom:10px; }
+  .foot-newsletter p{ font-size:14px; color:#B9AB98; margin-bottom:20px; max-width:340px; }
+  .news-form{ display:flex; border:1px solid var(--gold-soft); border-radius:2px; overflow:hidden; max-width:400px; }
+  .news-form input{ flex:1; border:none; background:transparent; padding:14px 18px; font-family:var(--sans); font-size:13px; color:var(--ivory); outline:none; }
+  .news-form input::placeholder{ color:#B9AB98; }
+  .news-form button{ border:none; background:var(--gold); color:var(--espresso); padding:14px 26px; font-size:11.5px; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; transition:background .3s ease; }
+  .news-form button:hover{ background:var(--gold-soft); }
+  .foot-thumbs{ display:flex; gap:12px; }
+  .foot-thumbs .thumb{ width:76px; height:76px; border-radius:4px; background-size:cover; background-position:center; }
+
+  .foot-brand{ display:flex; align-items:center; gap:12px; padding:34px 0; }
+  .foot-brand .brand-leaf{ color:var(--gold-soft); }
+  .foot-brand .brand{ color:var(--ivory); font-family:var(--serif); font-size:19px; letter-spacing:.05em; }
+  .foot-brand .brand-sub{ font-size:9px; letter-spacing:.22em; text-transform:uppercase; color:#B9AB98; }
+
+  .foot-bottom{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:22px 0 30px; font-size:12.5px; color:#9C8E7C; flex-wrap:wrap; gap:14px;
+    border-top:1px solid rgba(203,173,121,.15);
+  }
+  .foot-links{ display:flex; gap:22px; flex-wrap:wrap; }
+  .foot-links a{ color:#B9AB98; transition:color .3s ease; }
+  .foot-links a:hover{ color:var(--ivory); }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 1040px){
+    .hero-grid{ grid-template-columns:1fr; }
+    .hero-visual{ order:-1; }
+    .split-grid{ grid-template-columns:1fr; }
+    .split-photo{ min-height:220px; }
+    .occasion-grid{ grid-template-columns:repeat(2,1fr); }
+    .why-grid{ grid-template-columns:repeat(3,1fr); row-gap:34px; }
+    .cta-grid{ grid-template-columns:1fr; }
+    .cta-photo{ order:-1; min-height:280px; }
+    .wholesale-grid{ grid-template-columns:1fr; }
+    .foot-top{ grid-template-columns:1fr; text-align:left; }
+    .foot-thumbs{ justify-content:flex-start; }
+  }
+  @media (max-width: 640px){
+    .wrap{ padding:0 22px; }
+    nav{ padding:16px 22px; }
+    .nav-links{ display:none; }
+    .topbar{ font-size:9.5px; letter-spacing:.14em; }
+    section{ padding:70px 0; }
+    .hero{ padding:40px 0 0; }
+    .badge-row{ gap:16px; justify-content:space-between; }
+    .badge{ width:60px; }
+    .occasion-grid{ grid-template-columns:1fr; }
+    .why-grid{ grid-template-columns:repeat(2,1fr); }
+    .partner-grid{ grid-template-columns:1fr; }
+    .split-copy{ padding:50px 26px; }
+    .cta-copy{ padding:50px 26px; }
+    .foot-bottom{ flex-direction:column; align-items:flex-start; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; scroll-behavior:auto !important; }
+    .fade-up{ opacity:1; transform:none; }
+  }
+
+  a:focus-visible, button:focus-visible, input:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>&#10077;</span>PLANT-BASED. PREMIUM QUALITY. RESPONSIBLE BY NATURE.<span>&#10078;</span>
+</div>
+
+<header>
+  <nav>
+    <a href="#" class="brand-lockup">
+      <svg class="brand-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2C12 8 8 10 8 15C8 18 10 20 12 22C14 20 16 18 16 15C16 10 12 8 12 2Z"/></svg>
+      <span class="brand-text">
+        <span class="brand" style="display:block;">RIGID FIBER</span>
+        <span class="brand-sub">Plant-Based Straw</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="#collection">Shop <span class="caret">▾</span></a>
+      <a href="#story">Our Story</a>
+      <a href="#occasions">Who We Serve <span class="caret">▾</span></a>
+      <a href="#wholesale">Wholesale</a>
+      <a href="#sustainability">Sustainability</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-icons">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+      <div class="cart-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 7h13l-1.5 9h-11z"/><path d="M6 7L5 3H2"/><circle cx="9.5" cy="20" r="1"/><circle cx="16.5" cy="20" r="1"/></svg>
+        <span class="cart-count">0</span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy fade-up">
+      <div class="sprig"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 8 8 10 8 15C8 18 10 20 12 22C14 20 16 18 16 15C16 10 12 8 12 2Z" stroke="currentColor" stroke-width="1"/></svg></div>
+      <h1>Elevating<br>Every Sip.</h1>
+      <div class="rule"></div>
+      <p class="sub">Premium plant-based straws designed for cafés, events, hospitality, and everyday moments where presentation matters.</p>
+      <div class="hero-ctas">
+        <a href="#collection" class="btn btn-primary">Shop Premium Straws</a>
+        <a href="#occasions" class="btn btn-outline">For Cafés &amp; Events</a>
+      </div>
+      <div class="badge-row">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg><span>PFAS-Free</span></div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/><path d="M9 12l2 2 4-4"/></svg><span>BPA-Free</span></div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="5" y="4" width="14" height="16" rx="2"/></svg><span>Durable Hot &amp; Cold</span></div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2C12 8 8 10 8 15C8 18 10 20 12 22C14 20 16 18 16 15C16 10 12 8 12 2Z"/></svg><span>Plant-Based</span></div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 12a8 8 0 0 1 14-5"/><path d="M20 12a8 8 0 0 1-14 5"/><path d="M18 3v4h-4M6 21v-4h4"/></svg><span>Biodegradable</span></div>
+      </div>
+    </div>
+    <div class="hero-visual fade-up">
+      <div class="hero-photo-frame">
+        <img src="https://images.unsplash.com/photo-1768345755887-3eea6a0ad107?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Iced coffee served with a Rigid Fiber plant-based straw, styled with roses">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPLIT: A BETTER STRAW ================= -->
+<section class="split" id="story">
+  <div class="split-grid">
+    <div class="split-photo" style="background-image:url('https://images.unsplash.com/photo-1641919089328-5d5063828c4f?fm=jpg&q=80&w=900&auto=format&fit=crop');" role="img" aria-label="Citrus cocktail with a paper straw"></div>
+    <div class="split-copy fade-up">
+      <p class="eyebrow">Designed for Beauty. Made for Every Sip.</p>
+      <h2>A Better Straw for Beautiful Drinks.</h2>
+      <p>Rigid Fiber straws bring together refined presentation, reliable performance, and responsible materials. Made from renewable plant-based fibers, they stay strong in every drink and look beautiful in every setting.</p>
+      <a href="#story" class="btn btn-outline">Our Story</a>
+    </div>
+    <div class="split-photo" style="background-image:url('https://images.unsplash.com/photo-1618834416540-8c4209752f77?fm=jpg&q=80&w=900&auto=format&fit=crop');" role="img" aria-label="Cocktail with a paper straw and lime"></div>
+  </div>
+</section>
+
+<!-- ================= CRAFTED FOR EVERY OCCASION ================= -->
+<section id="occasions">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <p class="eyebrow">Crafted for Every Occasion</p>
+      <h2>Wherever the Moment Matters</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="occasion-grid">
+      <div class="occ-card fade-up">
+        <div class="occ-photo" style="background-image:url('https://rigidfiber.com/cdn/shop/files/rigid-fiber-paper-straw-limeade-summer.jpg?v=1717023134&width=500');"></div>
+        <div class="occ-body">
+          <h4>Cafés &amp; Coffee Shops</h4>
+          <p>Perfect for iced coffee, matcha, tea, smoothies, and signature drinks.</p>
+          <a href="#">Learn More →</a>
+        </div>
+      </div>
+      <div class="occ-card fade-up">
+        <div class="occ-photo" style="background-image:url('https://images.unsplash.com/photo-1649615644634-2b9c72b19efd?fm=jpg&q=80&w=500&auto=format&fit=crop');"></div>
+        <div class="occ-body">
+          <h4>Events &amp; Weddings</h4>
+          <p>A refined touch for cocktail hours, brunches, showers, and celebrations.</p>
+          <a href="#">Learn More →</a>
+        </div>
+      </div>
+      <div class="occ-card fade-up">
+        <div class="occ-photo" style="background-image:url('https://images.unsplash.com/photo-1631606305238-b76ec0f86af3?fm=jpg&q=80&w=500&auto=format&fit=crop');"></div>
+        <div class="occ-body">
+          <h4>Restaurants &amp; Hospitality</h4>
+          <p>Durable, reliable, and designed to elevate the guest experience.</p>
+          <a href="#">Learn More →</a>
+        </div>
+      </div>
+      <div class="occ-card fade-up">
+        <div class="occ-photo" style="background-image:url('https://rigidfiber.com/cdn/shop/files/paper-straws-in-lemonade-with-family.jpg?v=1716577988&width=500');"></div>
+        <div class="occ-body">
+          <h4>Everyday Home Use</h4>
+          <p>Bring beauty, function, and sustainability to your daily routine.</p>
+          <a href="#">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE ================= -->
+<section>
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <p class="eyebrow">Why Choose Rigid Fiber</p>
+      <div class="rule"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-item fade-up">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2C12 8 8 10 8 15C8 18 10 20 12 22C14 20 16 18 16 15C16 10 12 8 12 2Z"/></svg>
+        <h4>Sustainable</h4>
+        <p>Made from renewable plant-based fibers.</p>
+      </div>
+      <div class="why-item fade-up">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg>
+        <h4>Durable</h4>
+        <p>Stays strong in hot or cold drinks.</p>
+      </div>
+      <div class="why-item fade-up">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M7 9h10l-1 11a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2L7 9z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+        <h4>Elevated Design</h4>
+        <p>A refined look that complements every setting.</p>
+      </div>
+      <div class="why-item fade-up">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 12a8 8 0 0 1 14-5"/><path d="M20 12a8 8 0 0 1-14 5"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>
+        <h4>Eco-Friendly</h4>
+        <p>Biodegradable and a better choice for our planet.</p>
+      </div>
+      <div class="why-item fade-up">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2C12 8 8 10 8 15C8 18 10 20 12 22C14 20 16 18 16 15C16 10 12 8 12 2Z"/></svg>
+        <h4>Safe &amp; Non-Toxic</h4>
+        <p>PFAS-free, BPA-free, and made with better materials.</p>
+      </div>
+      <div class="why-item fade-up">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12l3 3 8-8M5 19l3 3 11-11"/></svg>
+        <h4>Premium Clarity</h4>
+        <p>Clean, neutral finish that enhances the drink experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BANNER ================= -->
+<section class="cta-banner" id="sustainability">
+  <div class="cta-grid">
+    <div class="cta-copy fade-up">
+      <p class="eyebrow">Premium Quality. Responsible by Nature.</p>
+      <h2>The Premium Plant-Based Straw.</h2>
+      <p>Beautifully designed. Thoughtfully made. Better for your drinks, better for the planet.</p>
+      <div class="hero-ctas">
+        <a href="#collection" class="btn btn-primary">Shop Now</a>
+        <a href="#collection" class="btn btn-outline">View All Products</a>
+      </div>
+    </div>
+    <div class="cta-photo" style="background-image:url('https://images.unsplash.com/photo-1641919089328-5d5063828c4f?fm=jpg&q=80&w=1000&auto=format&fit=crop');" role="img" aria-label="Cocktail with a Rigid Fiber straw and fresh berries"></div>
+  </div>
+</section>
+
+<!-- ================= WHOLESALE ================= -->
+<section class="wholesale" id="wholesale">
+  <div class="wrap">
+    <div class="wholesale-grid">
+      <div class="wholesale-copy fade-up">
+        <p class="eyebrow">Wholesale &amp; Partnerships</p>
+        <h2>Bring a Premium Straw Experience to Your Customers.</h2>
+        <p>Rigid Fiber helps cafés, restaurants, hotels, caterers, and event venues upgrade from ordinary disposable straws to a more refined, plant-based alternative.</p>
+        <div class="wholesale-ctas">
+          <a href="#contact" class="btn btn-primary">Request Wholesale Pricing</a>
+          <a href="#contact" class="btn btn-outline">Become a Distributor</a>
+        </div>
+      </div>
+      <div class="partner-grid fade-up">
+        <div class="partner-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="4" y="4" width="12" height="16" rx="1"/><path d="M8 4v16M4 9h4M4 14h4"/></svg>
+          <h4>Competitive Pricing</h4>
+          <p>Volume discounts and flexible options.</p>
+        </div>
+        <div class="partner-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg>
+          <h4>Reliable Supply</h4>
+          <p>Consistent quality and dependable fulfillment.</p>
+        </div>
+        <div class="partner-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2C12 8 8 10 8 15C8 18 10 20 12 22C14 20 16 18 16 15C16 10 12 8 12 2Z"/></svg>
+          <h4>Brand Alignment</h4>
+          <p>Sustainability your customers can feel good about.</p>
+        </div>
+        <div class="partner-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16z"/><path d="M12 8v4l3 2"/></svg>
+          <h4>Customer Support</h4>
+          <p>We're here to support your business growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-newsletter">
+        <h4>Stay Inspired</h4>
+        <h3>Sign up for new products, seasonal ideas, and exclusive offers.</h3>
+        <form class="news-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Signed Up'">
+          <input type="email" placeholder="Enter your email" required aria-label="Email address">
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+      <div class="foot-thumbs">
+        <div class="thumb" style="background-image:url('https://rigidfiber.com/cdn/shop/files/plastic-free-paper-straw-rigid-fiber-hot-cold-standard-size_5baedce5-778f-4886-a6fe-3b7f0434d62d.jpg?v=1717023134&width=200');"></div>
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1768345755887-3eea6a0ad107?fm=jpg&q=60&w=200&auto=format&fit=crop');"></div>
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1618834416540-8c4209752f77?fm=jpg&q=60&w=200&auto=format&fit=crop');"></div>
+      </div>
+    </div>
+    <div class="foot-brand">
+      <svg class="brand-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" width="26" height="26"><path d="M12 2C12 8 8 10 8 15C8 18 10 20 12 22C14 20 16 18 16 15C16 10 12 8 12 2Z"/></svg>
+      <span>
+        <span class="brand" style="display:block;">RIGID FIBER</span>
+        <span class="brand-sub">Plant-Based Straw</span>
+      </span>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-links">
+        <a href="#collection">Shop</a>
+        <a href="#story">Our Story</a>
+        <a href="#sustainability">Sustainability</a>
+        <a href="#">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#wholesale">Wholesale</a>
+      </div>
+      <span>© 2026 Rigid Fiber. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
