@@ -156,11 +156,19 @@
 
   .hero-visual{ position:relative; }
   .hero-photo-frame{
-    position:relative; border-radius:4px; overflow:hidden;
+    display:grid; grid-template-columns:0.85fr 1.4fr; gap:4px;
+    border-radius:4px; overflow:hidden;
     box-shadow:var(--shadow);
     min-height:460px;
   }
-  .hero-photo-frame img{ width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
+  .hero-photo-frame .straw-panel{
+    background:var(--paper);
+    display:flex; align-items:center; justify-content:center;
+    padding:30px 16px;
+  }
+  .hero-photo-frame .straw-panel img{ width:100%; height:auto; max-height:100%; object-fit:contain; }
+  .hero-photo-frame .drink-panel{ position:relative; }
+  .hero-photo-frame .drink-panel img{ width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
 
   /* ---------- SECTION SHELL ---------- */
   section{ padding:100px 0; position:relative; }
@@ -266,6 +274,8 @@
     .topbar{ font-size:9.5px; letter-spacing:.14em; }
     section{ padding:70px 0; }
     .hero{ padding:40px 0 0; }
+    .hero-photo-frame{ grid-template-columns:1fr; }
+    .hero-photo-frame .drink-panel{ min-height:260px; }
     .badge-row{ gap:16px; justify-content:space-between; }
     .badge{ width:60px; }
     .occasion-grid{ grid-template-columns:1fr; }
@@ -340,7 +350,12 @@
     </div>
     <div class="hero-visual fade-up">
       <div class="hero-photo-frame">
-        <img src="https://images.unsplash.com/photo-1768345755887-3eea6a0ad107?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Iced coffee served with a Rigid Fiber plant-based straw, styled with roses">
+        <div class="straw-panel">
+          <img src="https://rigidfiber.com/cdn/shop/files/plastic-free-paper-straw-rigid-fiber-hot-cold-standard-size_5baedce5-778f-4886-a6fe-3b7f0434d62d.jpg?v=1717023134&width=500" alt="Rigid Fiber plant-based paper straw, 100% chemical-free, built for hot and cold drinks">
+        </div>
+        <div class="drink-panel">
+          <img src="https://images.unsplash.com/photo-1768345755887-3eea6a0ad107?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Iced coffee styled with a Rigid Fiber plant-based straw">
+        </div>
       </div>
     </div>
   </div>
