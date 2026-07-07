@@ -179,6 +179,19 @@
   .split{ padding:0; }
   .split-grid{ display:grid; grid-template-columns:1fr 1.15fr 1fr; align-items:stretch; min-height:480px; }
   .split-photo{ background-size:cover; background-position:center; min-height:340px; }
+
+  /* ---------- PHOTO PLACEHOLDER (awaiting real photography) ---------- */
+  .photo-placeholder{
+    position:relative;
+    width:100%; height:100%; min-height:190px;
+    background:linear-gradient(155deg, var(--paper), var(--blush-soft));
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:10px; text-align:center; padding:20px;
+  }
+  .photo-placeholder svg{ width:34px; height:34px; color:var(--gold-soft); opacity:.8; }
+  .photo-placeholder span{
+    font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--espresso-soft); opacity:.75;
+  }
   .split-copy{
     background:var(--paper);
     display:flex; flex-direction:column; align-items:center; justify-content:center;
@@ -351,10 +364,13 @@
     <div class="hero-visual fade-up">
       <div class="hero-photo-frame">
         <div class="straw-panel">
-          <img src="https://rigidfiber.com/cdn/shop/files/plastic-free-paper-straw-rigid-fiber-hot-cold-standard-size_5baedce5-778f-4886-a6fe-3b7f0434d62d.jpg?v=1717023134&width=500" alt="Rigid Fiber plant-based paper straw, 100% chemical-free, built for hot and cold drinks">
+          <img src="images/straw-single.jpg" alt="Rigid Fiber plant-based paper straw, matte white, built for hot and cold drinks">
         </div>
         <div class="drink-panel">
-          <img src="https://images.unsplash.com/photo-1768345755887-3eea6a0ad107?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Iced coffee styled with a Rigid Fiber plant-based straw">
+          <div class="photo-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 3h10l-1 15a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2L7 3z"/><path d="M7 9h10"/></svg>
+            <span>Lifestyle Photography<br>Coming Soon</span>
+          </div>
         </div>
       </div>
     </div>
@@ -364,14 +380,14 @@
 <!-- ================= SPLIT: A BETTER STRAW ================= -->
 <section class="split" id="story">
   <div class="split-grid">
-    <div class="split-photo" style="background-image:url('https://images.unsplash.com/photo-1641919089328-5d5063828c4f?fm=jpg&q=80&w=900&auto=format&fit=crop');" role="img" aria-label="Citrus cocktail with a paper straw"></div>
+    <div class="split-photo"><div class="photo-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 3h12l-1.2 16.5A2 2 0 0 1 14.8 21H9.2a2 2 0 0 1-2-1.5L6 3z"/><path d="M6 8h12"/></svg><span>Lifestyle Photography<br>Coming Soon</span></div></div>
     <div class="split-copy fade-up">
       <p class="eyebrow">Designed for Beauty. Made for Every Sip.</p>
       <h2>A Better Straw for Beautiful Drinks.</h2>
       <p>Rigid Fiber straws bring together refined presentation, reliable performance, and responsible materials. Made from renewable plant-based fibers, they stay strong in every drink and look beautiful in every setting.</p>
       <a href="#story" class="btn btn-outline">Our Story</a>
     </div>
-    <div class="split-photo" style="background-image:url('https://images.unsplash.com/photo-1618834416540-8c4209752f77?fm=jpg&q=80&w=900&auto=format&fit=crop');" role="img" aria-label="Cocktail with a paper straw and lime"></div>
+    <div class="split-photo"><div class="photo-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 3h12l-1.2 16.5A2 2 0 0 1 14.8 21H9.2a2 2 0 0 1-2-1.5L6 3z"/><path d="M6 8h12"/></svg><span>Lifestyle Photography<br>Coming Soon</span></div></div>
   </div>
 </section>
 
@@ -385,7 +401,7 @@
     </div>
     <div class="occasion-grid">
       <div class="occ-card fade-up">
-        <div class="occ-photo" style="background-image:url('https://rigidfiber.com/cdn/shop/files/rigid-fiber-paper-straw-limeade-summer.jpg?v=1717023134&width=500');"></div>
+        <div class="occ-photo"><div class="photo-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 3h10l-1 15a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2L7 3z"/><path d="M7 9h10"/></svg><span>Photography Coming Soon</span></div></div>
         <div class="occ-body">
           <h4>Cafés &amp; Coffee Shops</h4>
           <p>Perfect for iced coffee, matcha, tea, smoothies, and signature drinks.</p>
@@ -393,7 +409,7 @@
         </div>
       </div>
       <div class="occ-card fade-up">
-        <div class="occ-photo" style="background-image:url('https://images.unsplash.com/photo-1649615644634-2b9c72b19efd?fm=jpg&q=80&w=500&auto=format&fit=crop');"></div>
+        <div class="occ-photo"><div class="photo-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2C12 8 8 10 8 15C8 18 10 20 12 22C14 20 16 18 16 15C16 10 12 8 12 2Z"/></svg><span>Photography Coming Soon</span></div></div>
         <div class="occ-body">
           <h4>Events &amp; Weddings</h4>
           <p>A refined touch for cocktail hours, brunches, showers, and celebrations.</p>
@@ -401,7 +417,7 @@
         </div>
       </div>
       <div class="occ-card fade-up">
-        <div class="occ-photo" style="background-image:url('https://images.unsplash.com/photo-1631606305238-b76ec0f86af3?fm=jpg&q=80&w=500&auto=format&fit=crop');"></div>
+        <div class="occ-photo" style="background-image:url('images/spork-with-food.jpg'); background-position:center 30%;"></div>
         <div class="occ-body">
           <h4>Restaurants &amp; Hospitality</h4>
           <p>Durable, reliable, and designed to elevate the guest experience.</p>
@@ -409,7 +425,7 @@
         </div>
       </div>
       <div class="occ-card fade-up">
-        <div class="occ-photo" style="background-image:url('https://rigidfiber.com/cdn/shop/files/paper-straws-in-lemonade-with-family.jpg?v=1716577988&width=500');"></div>
+        <div class="occ-photo" style="background-image:url('images/knife-with-herbs.jpg');"></div>
         <div class="occ-body">
           <h4>Everyday Home Use</h4>
           <p>Bring beauty, function, and sustainability to your daily routine.</p>
@@ -474,7 +490,7 @@
         <a href="#collection" class="btn btn-outline">View All Products</a>
       </div>
     </div>
-    <div class="cta-photo" style="background-image:url('https://images.unsplash.com/photo-1641919089328-5d5063828c4f?fm=jpg&q=80&w=1000&auto=format&fit=crop');" role="img" aria-label="Cocktail with a Rigid Fiber straw and fresh berries"></div>
+    <div class="cta-photo" style="background-image:url('images/straw-bundle.jpg');" role="img" aria-label="Bundle of Rigid Fiber plant-based straws"></div>
   </div>
 </section>
 
@@ -530,9 +546,9 @@
         </form>
       </div>
       <div class="foot-thumbs">
-        <div class="thumb" style="background-image:url('https://rigidfiber.com/cdn/shop/files/plastic-free-paper-straw-rigid-fiber-hot-cold-standard-size_5baedce5-778f-4886-a6fe-3b7f0434d62d.jpg?v=1717023134&width=200');"></div>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1768345755887-3eea6a0ad107?fm=jpg&q=60&w=200&auto=format&fit=crop');"></div>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1618834416540-8c4209752f77?fm=jpg&q=60&w=200&auto=format&fit=crop');"></div>
+        <div class="thumb" style="background-image:url('images/straw-single.jpg');"></div>
+        <div class="thumb" style="background-image:url('images/spork-with-food.jpg'); background-position:center 30%;"></div>
+        <div class="thumb" style="background-image:url('images/knife-with-herbs.jpg');"></div>
       </div>
     </div>
     <div class="foot-brand">
